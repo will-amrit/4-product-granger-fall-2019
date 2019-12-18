@@ -21,7 +21,7 @@ p {line-height: 2}
 <body>
 
 <!-- Header / Home-->
-<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+<header class="w3-display-container w3-wide bgimg w3-greyscale-min" id="home">
   <div class="w3-display-middle w3-text-white w3-center">
     <h1 class="w3-jumbo">Griffith</h1>
     <h2>TVR</h2>
@@ -31,25 +31,52 @@ p {line-height: 2}
 
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
-  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
-    <a href="#us" style="width:25%" class="w3-bar-item w3-button">Legacy</a>
-    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Models</a>
+  <div class="w3-bar w3-grey w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Home</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Legacy</a>
+    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Models</a>
     <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Deposit</a>
   </div>
 </div>
 
-<!-- About / Jane And John -->
-<div class="w3-container w3-padding-64 w3-black w3-grayscale-min" id="us">
+<!-- Legacy -->
+<div class="w3-container w3-padding-64 w3-black" id="us">
   <div class="w3-content">
     <h1 class="w3-center w3-text-grey"><b>Legacy</b></h1>
-    <img class="w3-round w3-grayscale-min" src="img/TVRlegacy.jpg" style="width:100%;margin:32px 0">
-    <p><i>The TVR Griffith is</i>
-    </p><br>
-    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Learn More</a></p>
+    <img class="w3-round w3-greyscale-max" src="img/TVRlegacy.jpg" style="width:100%;margin:32px 0">
+
+      <div class="w3-black w3-section w3-round">
+  <button onclick="myFunction('Demo1')" class="w3-button w3-round w3-red w3-hover-grey w3-large w3-center">
+  Learn More</button>
+  <div id="Demo1" class="w3-hide w3-container">
+    <p>Trevor Wilkinson (14 May 1923 – 6 June 2008) was born in Blackpool and left school at 14 to start an engineering apprenticeship at a local garage.
+
+In 1946, he purchased an old wheelwright's workshop in Beverley Grove, Blackpool, to start an engineering business that he named Trevcar Motors. Initially, the company performed general engineering work (not always automobile related), and would also refresh and service cars and trucks. In 1947, local auto enthusiast Jack Pickard joined the company. Trevcar Motors was subsequently renamed to TVR Engineering (dropping several letters from Wilkinson's first name), and it continued to find general mechanical engineering work through the following years.
+      
+      The first model produced by TVR was the Grantura Mark 1, which used a fastback-style body over the existing chassis design (with the same trailing-arm independent suspension front and rear.) Engine options included the Ford 100E sidevalve (normally aspirated or supercharged), the Ford 105E OHV unit, two different Coventry Climax units, or the MGA's BMC B-series. The interior of the Grantura was cramped, with the short doors and 17"-diameter steering wheel proving impediments to ingress. Climax-powered cars would be finished with a leather interior, while cars with the lower-specification engines were trimmed with vinyl.
+      
+      
+      On the evening of 3 January 1975, a fire broke out in the TVR factory, likely caused by faulty wiring in a 3000M factory demonstrator car. Several complete and nearly complete cars were destroyed, as well as many components in the company's stores. Soot and ash covered every surface, and the damage was estimated to be £200,000. A small team of office workers came in to clean and perform administrative tasks while the insurance company made its assessment.
+      
+      In the late 1970s, TVR's leadership felt that the next model should represent a modern departure in styling from the Vixen and M Series cars. It was also important that the replacement model could be economically produced and that it would be easier to bring into compliance with safety and emissions regulations. TVR management met with Oliver Winterbottom in August 1977, and it was decided that he would style a new two-seat coupe. Ian Jones, formerly of Lotus Cars and then of Larkspur Design near Southampton, was to design the chassis. The prototype project initially showed slow progress while it was being worked at the Topolec facility in Norwich, so it was moved to a unit that TVR began renting at Bamber Bridge. The prototype car began road testing in January 1979, powered by the 2.8 litre fuel injected Ford Cologne V6 engine. The name for the car, Tasmin, was created by blending the female name "Tamsin" with the name of the Australasian racing Tasman Series.
+      
+      n the 1990s, TVR modified a number of Rover V8s, but subsequently an in-house engine design was developed. The AJP8 engine, a lightweight alloy V8, was developed by engineering consultant Al Melling along with John Ravenscroft and Peter Wheeler (hence the AJP initials). The new engine was originally destined for the Griffith and Chimaera models, but development took longer than expected and eventually became available in the Cerbera and the Tuscan race car.
+
+With the TVR S Series, Wheeler started by re-introducing the traditional design elements from the M-series. This became a great success for the company, and he followed up by introducing a number of new and bold body designs including the Chimaera, Griffith, Cerbera, Tuscan, Tamora, T350, Typhon and Sagaris.</p>
   </div>
 </div>
-
+  </div>
+</div>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 <!-- Background photo -->
 <div class="w3-display-container bgimg2">
   <div class="w3-display-middle w3-text-white w3-center">
@@ -58,31 +85,30 @@ p {line-height: 2}
   </div>
 </div>
 
-<!-- Wedding information -->
-<div class="w3-container w3-padding-64 w3-pale-black w3-grayscale-min w3-center" id="wedding">
+<!-- Models -->
+<div class="w3-container w3-padding-64 w3-black w3-center" id="wedding">
   <div class="w3-content">
     <h1 class="w3-text-grey"><b>Models</b></h1>
-    <img class="w3-round-large w3-grayscale-min" src="img/TVRmodalks.jpg" style="width:100%;margin:64px 0">
+    <img class="w3-round-large w3-greyscale-max" src="img/TVRmodalks.jpg" style="width:100%;margin:64px 0">
     <div class="w3-row">
       <div class="w3-half">
         <h2>Sagaris</h2>
-        <img class="w3-image" src="img/PurpleOneBad.jpg" >
+        <img src="img/PurpleOneBad.jpg" style="max-width: 100%; height: 285px; padding: 10px; border-radius: 15px; filter: grayscale(50%)">
       </div>
       <div class="w3-half">
         <h2>T350</h2>
-        <p>Some place, an address</p>
-        <p>Some where, some address</p>
+      <img src="img/BetterT350.jpg" style="padding: 10px; max-width: 100%; border-radius: 15px; filter: grayscale(50%)">
       </div>
     </div>
   </div>
 </div>
 
-<!-- RSVP section -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
-  <h1>HOPE YOU CAN MAKE IT!</h1>
-  <p class="w3-large">Kindly Respond By January, 2017</p>
+<!-- Deposit -->
+<div class="w3-container w3-padding-64 w3-dark-grey w3-center w3-wide" id="rsvp">
+  <h1>Griffith</h1>
+  <p class="w3-large">Coming 2020</p>
   <p class="w3-xlarge">
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-hover-black" style="padding:8px 60px">Continue</button>
   </p>
 </div>
 
@@ -90,18 +116,18 @@ p {line-height: 2}
 <div id="id01" class="w3-modal">
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
     <div class="w3-container w3-white w3-center">
-      <h1 class="w3-wide">CAN YOU COME?</h1>
-      <p>We really hope you can make it.</p>
+      <h1 class="w3-wide">Deposit</h1>
+      <p>Be the first to recive your vehicle</p>
       <form>
         <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
       </form>
-      <p><i>Sincerely, John & Jane</i></p>
+      <p><i>Thank you for your interest</i></p>
       <div class="w3-row">
         <div class="w3-half">
-          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Deposit</button>
         </div>
         <div class="w3-half">
-          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-black">Updates</button>
         </div>
       </div>
     </div>
@@ -110,10 +136,9 @@ p {line-height: 2}
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 <div class="w3-hide-small" style="margin-bottom:32px"> </div>
 
 </body>
-        </head>p
+        </head>
 </html>
